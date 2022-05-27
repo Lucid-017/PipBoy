@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout IV</title>
+    <link rel="stylesheet" href="/css/tether.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/lucid.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-toggleable navbar-light">
+        <div class="collapse navbar-collapse" id="MyNav">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item main active"><a href="pipboy.html" class="nav-link">STAT</a></li>
+                <li class="nav-item"><a href="pipboyInventry.html" class="nav-link">INV</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">DATA</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">MAP</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">RADIO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link highlight " id="status-tab" data-bs-toggle="tab" data-bs-target="#status" type="button" role="tab" aria-controls="status" aria-selected="true">STATUS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">SPECIAL</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="perks-tab" data-bs-toggle="tab" data-bs-target="#perks" type="button" role="tab" aria-controls="perks" aria-selected="false">PERKS</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
+                        <div class="center-image">
+                            <img src="/img/homescreen.gif" alt="pipboy">
+                        </div>
+                        <div class="stat-bars">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-percent"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-percent l10"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-percent l20"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-percent l50"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-percent l70"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-percent l90 "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    
+                        </div>
+                        <div class="row stat-nums">
+                                <div class="empty-block"></div>
+                                <div class="col-2">
+                                    <img class="img-responsive glock" src="/img/996px-Pistol_icon.svg.png" alt="">
+                                </div>
+                                <div class="col-1">
+                                    <div class="icon">
+                                        <img class="img-responsive ch" src="/img/icons8-center-of-gravity-50.png" alt="">
+                                    </div>
+                                    <div class="points">18</div>
+                                </div>
+                                <div class="col-1 transparent"></div>
+
+                                
+                                <div class="col-2">
+                                    <img class="img-responsive" src="/military-helmet-svgrepo-com.svg" alt="">
+                                </div>
+                                <div class="col-1">
+                                    <div class="icon">
+                                        <img class="img-responsive zap" src="/img/icons8-lightning-bolt-90.png" alt="" srcset="">
+                                    </div>
+                                    <div class="points">18</div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="icon">
+                                        <img src="/img/icons8-nuclear-90.png" class="img-responsive boom">
+                                    </div>
+                                    <div class="points">18</div>
+                                </div>
+
+
+
+                                <div class="col-2 transparent"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="special" role="tabpanel" aria-labelledby="special-tab">
+                        <ul class="item-list ">
+                            <li><a href="#" onclick="st()" class="strength">Strength</a></li>
+                            <li><a href="#" class="perception">Perception</a></li>
+                            <li><a href="#" class="endurance">Endurance</a></li>
+                            <li><a href="#" class="charisma">Charisma</a></li>
+                            <li><a href="#" class="intelligence">Intelligence</a></li>
+                            <li><a href="#" class="agility">Agility</a></li>
+                            <li><a href="#" class="luck">Luck</a></li>
+                        </ul>
+                        <div class="item-stats sp">
+                            <div class="row-higlight"">
+                                <div class="row">
+                                    <div class="col-12">displaying images onclick
+                                        <div id="strength" class="strength move"> <img  src="/img/strength-unscreen.gif" alt="" srcset=""></div>
+                                        <div class="text"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+
+                               
+
+                            <div class="row-higlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="perception move"> <img  src="/img/perception-unscreen.gif" alt="" srcset=""></div>
+                                        
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <div class="row-higlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="endurance none move"> <img src="/img/perception-unscreen.gif" alt="" srcset=""></div>
+                                        <div class="text"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <div class="row-higlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="charisma none move"> <img src="/img/charisma-unscreen.gif" alt="" srcset=""></div>
+                                        <div class="text"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <div class="row-higlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="intelligence none move"> <img src="/img/intelligence.gif" alt="" srcset=""></div>
+                                        <div class="text"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <div class="row-higlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="agility none move"> <img src="/img/ability-unscreen.gif" alt="" srcset=""></div>
+                                        <div class="text"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                            <div class="row-higlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="luck none move"> <img src="/img/luck.gif" alt="" srcset=""></div>
+                                        <div class="text"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+                                
+                        </div>
+                            
+
+                    </div>
+                    <div class="tab-pane fade" id="perks" role="tabpanel" aria-labelledby="perks-tab">CONTENT FOR PERKS</div>
+                </div>
+          
+            </div>
+        </div>
+    </div>
+
+
+        
+    <footer class="pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 50/100
+            </div>
+            <div class="col-6">
+                LEVEL 1
+                <div class="level-progress">
+                    <div class="level-percent"></div>
+                </div>
+            </div>
+            <div class="col-3 text-end">
+                AP 50/70
+            </div>
+        </div>
+
+    </footer>
+          
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <script src="/js/pipboy.js"></script>
+</body>
+</html>

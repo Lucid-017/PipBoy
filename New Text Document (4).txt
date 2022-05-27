@@ -1,0 +1,15 @@
+pistol name
+damage per shot
+damage per second
+fire rate
+range
+accuracy
+critical hit damage
+action point cost aka AP
+damage per action shot
+ammunition used
+magazine capacity
+weight
+value in caps
+value to weight ratio
+form id
