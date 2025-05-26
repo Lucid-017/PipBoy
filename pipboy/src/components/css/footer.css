@@ -1,0 +1,12 @@
+.pip-footer{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.pip-footer .level-progress{
+    width: 85%;
+}
+.pip-footer .w-full {
+    background-color: #14fe182c;
+    padding: 5px 10px;
+}

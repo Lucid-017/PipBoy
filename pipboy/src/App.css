@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: pipboy;
+  src: url('/monofonto.otf');
+}
+html,body{
+  height: 100%;
+}
+body{
+  font-family: pipboy ,sans-serif;
+  color: #14fe17;
+  background-color: #272b23;
+}
+body::before{
+  content: "";
+  position: absolute;
+  height: 750px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: repeating-linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.4)1px,transparent 1px,transparent 2px);
+  opacity: .4;
+  pointer-events: none;
+}

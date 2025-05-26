@@ -1,0 +1,61 @@
+/* 1) Container with top & bottom neon‑green borders */
+.nav {
+    /* background: #1a1a1a;            dark background */
+    border-top:   2px solid #14fe17;   /* neon‑green */
+    border-bottom:2px solid #14fe17;
+  }
+  
+  /* 2) Center the items */
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* 3) Some horizontal spacing */
+  .nav-item {
+    margin: 0 2rem;
+  }
+  
+  /* 4) Default link look */
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;              /* vertical padding */
+    color: #14fe17;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(.7rem, 2.5vw, 1rem);
+
+  }
+  
+  /* 5) Active link “lifts” up to cover the top border */
+  .nav-link.active {
+    font-size: 1rem;
+    color: #14fe17;
+    background-color: #272b23ac;
+    /* font-size: 1.1rem; */
+    /* padding: 2rem; */
+    top: 2px;                       /* move DOWN 2px so its bg covers the top border */
+    /* note: we didn’t add padding‑bottom, so bottom border still shows under the link */
+  }
+  
+  /* 6) Vertical stubs on either side of the active link */
+  .nav-link.active::before,
+  .nav-link.active::after {
+    content: "";
+    position: absolute;
+    top: 18px;                     /* adjust this so the stub reaches the full notch height */
+    width: 2px;                     /* same thickness as the border */
+    height: 21px;                   /* stub height: tweak to match your design */
+    background: #14fe17;
+  }
+  .nav-link.active::before {
+    left: 0;                        /* at the left edge of the link */
+  }
+  .nav-link.active::after {
+    right: 0;                       /* at the right edge of the link */
+  }
+  
