@@ -1,0 +1,535 @@
+{
+    "general": [
+        {
+            "name": "Times Slept",
+            "count": 0
+        },
+        {
+            "name": "Stimpaks Used",
+            "count": 0
+        },
+        {
+            "name": "RadAway Used",
+            "count": 0
+        },
+        {
+            "name": "Rad-X Taken",
+            "count": 0
+        },
+        {
+            "name": "Times Addicted",
+            "count": 0
+        },
+        {
+            "name": "Chems Taken",
+            "count": 0
+        },
+        {
+            "name": "Enemies Killed",
+            "count": 0
+        },
+        {
+            "name": "Creatures Killed",
+            "count": 0
+        },
+        {
+            "name": "Robots Destroyed",
+            "count": 0
+        },
+        {
+            "name": "Super Mutants Killed",
+            "count": 0
+        },
+        {
+            "name": "Ghouls Killed",
+            "count": 0
+        },
+        {
+            "name": "People Killed",
+            "count": 0
+        },
+        {
+            "name": "Damage Dealt",
+            "count": 0
+        },
+        {
+            "name": "Damage Taken",
+            "count": 0
+        },
+        {
+            "name": "Critical Hits",
+            "count": 0
+        },
+        {
+            "name": "Sneak Attacks",
+            "count": 0
+        },
+        {
+            "name": "Limbs Crippled",
+            "count": 0
+        },
+        {
+            "name": "Times Crippled",
+            "count": 0
+        },
+        {
+            "name": "Locations Discovered",
+            "count": 0
+        },
+        {
+            "name": "Locations Cleared",
+            "count": 0
+        },
+        {
+            "name": "Locks Picked",
+            "count": 0
+        },
+        {
+            "name": "Computers Hacked",
+            "count": 0
+        },
+        {
+            "name": "Quests Completed",
+            "count": 0
+        },
+        {
+            "name": "Main Quests Completed",
+            "count": 0
+        },
+        {
+            "name": "Side Quests Completed",
+            "count": 0
+        },
+        {
+            "name": "Days Passed",
+            "count": 0
+        },
+        {
+            "name": "Hours Played",
+            "count": 0
+        },
+        {
+            "name": "Levels Gained",
+            "count": 0
+        },
+        {
+            "name": "Caps Collected",
+            "count": 0
+        },
+        {
+            "name": "Items Repaired",
+            "count": 0
+        },
+        {
+            "name": "Bobbleheads Found",
+            "count": 0
+        },
+        {
+            "name": "Skill Books Read",
+            "count": 0
+        },
+        {
+            "name": "Speech Challenges Succeeded",
+            "count": 0
+        },
+        {
+            "name": "Times Caught Stealing",
+            "count": 0
+        },
+        {
+            "name": "Nuka-Cola Quantums Drunk",
+            "count": 0
+        }
+    ],
+    "attributes": [
+        {
+            "name": "Strength",
+            "image": "/assets/img/strength-unscreen.gif",
+            "score": 7,
+            "description": "Strength is a measure of your raw physical power. It affects how much you can carry, and determines the effectiveness of all melee attacks."
+        },
+        {
+            "name": "Perception",
+            "image": "/assets/img/perception-unscreen.gif",
+            "score": 5,
+            "description": "A high Perception grants a bonus to the Explosives, Lockpick and Energy Weapons skills, and determines when red compass markings appear (which indicate threats)."
+        },
+        {
+            "name": "Endurance",
+            "image": "/assets/img/endurance.gif",
+            "score": 8,
+            "description": "Endurance is a measure of your overall physical fitness. It affects your total health, and your resistance to environmental hazards like radiation."
+        },
+        {
+            "name": "Charisma",
+            "image": "/assets/img/charisma-unscreen.gif",
+            "score": 3,
+            "description": "Charisma is your ability to charm and persuade others. It affects your success in dialogue and the number of companions you can recruit."
+        },
+        {
+            "name": "Intelligence",
+            "image": "/assets/img/intelligence.gif",
+            "score": 9,
+            "description": "Intelligence affects the number of new skill points earned per level and your aptitude in technical and scientific areas. It’s crucial for dialogue options requiring wit."
+        },
+        {
+            "name": "Agility",
+            "image": "/assets/img/ability-unscreen.gif",
+            "score": 6,
+            "description": "Agility is a measure of your speed and dexterity. It affects the number of Action Points in V.A.T.S. and your ability to sneak."
+        },
+        {
+            "name": "Luck",
+            "image": "/assets/img/luck.gif",
+            "score": 4,
+            "description": "Luck influences the chance of critical hits and affects every skill subtly. It also impacts the quality of loot you find in the wasteland."
+        }
+    ],
+    "skills": [
+        [
+            {
+                "name": "Barter",
+                "score": 18,
+                "image": "https://static.wikia.nocookie.net/fallout/images/5/5f/Barter.png/revision/latest?cb=20111225221224",
+                "description": "The Barter skill affects the prices you get for buying and selling items. In general, the higher your Barter skill, the lower your prices on purchased items.",
+                "governing_attribute": "Charisma",
+                "notes": ""
+            },
+            {
+                "name": "Big Guns",
+                "score": 25,
+                "image": "https://static.wikia.nocookie.net/fallout/images/6/6a/Big_Guns.png/revision/latest?cb=20111225221224",
+                "description": "The Big Guns skill determines your combat effectiveness with all oversized weapons such as the Fat Man, missile launcher, minigun, Gatling laser, and flamer.",
+                "governing_attribute": "Endurance",
+                "notes": "Replaced by Energy Weapons in later games like Fallout: New Vegas."
+            },
+            {
+                "name": "Energy Weapons",
+                "score": 32,
+                "image": "https://static.wikia.nocookie.net/fallout/images/0/0a/Energy_Weapons.png/revision/latest?cb=20111225221224",
+                "description": "The Energy Weapons skill determines your effectiveness with unconventional weapons such as the alien blaster, laser pistol, plasma rifle, etc.",
+                "governing_attribute": "Perception",
+                "notes": ""
+            },
+            {
+                "name": "Explosives",
+                "score": 17,
+                "image": "https://static.wikia.nocookie.net/fallout/images/3/3b/Explosives.png/revision/latest?cb=20111225221224",
+                "description": "The Explosives skill determines your ability to use explosive weapons such as grenades, mines, and the Fat Man, as well as your ability to disarm traps.",
+                "governing_attribute": "Perception",
+                "notes": ""
+            },
+            {
+                "name": "Lockpick",
+                "score": 24,
+                "image": "https://static.wikia.nocookie.net/fallout/images/8/8a/Lockpick.png/revision/latest?cb=20111225221224",
+                "description": "The Lockpick skill is used to open locked doors and containers. Higher skill levels allow you to pick more difficult locks.",
+                "governing_attribute": "Perception",
+                "notes": ""
+            },
+            {
+                "name": "Medicine",
+                "score": 20,
+                "image": "https://static.wikia.nocookie.net/fallout/images/9/9c/Medicine.png/revision/latest?cb=20111225221224",
+                "description": "The Medicine skill determines the effectiveness of stimpaks, RadAway, and other medical items, as well as your ability to heal through dialogue options.",
+                "governing_attribute": "Intelligence",
+                "notes": ""
+            },
+            {
+                "name": "Melee Weapons",
+                "score": 25,
+                "image": "https://static.wikia.nocookie.net/fallout/images/5/5d/Melee_Weapons.png/revision/latest?cb=20111225221224",
+                "description": "The Melee Weapons skill determines your effectiveness with melee weapons such as knives, baseball bats, and the super sledge.",
+                "governing_attribute": "Strength",
+                "notes": ""
+            },
+            {
+                "name": "Repair",
+                "score": 34,
+                "image": "https://static.wikia.nocookie.net/fallout/images/7/7f/Repair.png/revision/latest?cb=20111225221224",
+                "description": "The Repair skill allows you to maintain weapons and apparel, craft items at a workbench, and repair objects like turrets or generators.",
+                "governing_attribute": "Intelligence",
+                "notes": ""
+            },
+            {
+                "name": "Science",
+                "score": 34,
+                "image": "https://static.wikia.nocookie.net/fallout/images/4/4f/Science.png/revision/latest?cb=20111225221224",
+                "description": "The Science skill represents your knowledge of technology and is used to hack computers, recycle energy ammo, and access science-related dialogue options.",
+                "governing_attribute": "Intelligence",
+                "notes": ""
+            },
+            {
+                "name": "Small Guns",
+                "score": 20,
+                "image": "https://static.wikia.nocookie.net/fallout/images/1/1a/Small_Guns.png/revision/latest?cb=20111225221224",
+                "description": "The Small Guns skill determines your effectiveness with conventional firearms such as the 10mm pistol, hunting rifle, assault rifle, etc.",
+                "governing_attribute": "Agility",
+                "notes": "Renamed 'Guns' in Fallout: New Vegas."
+            },
+            {
+                "name": "Sneak",
+                "score": 15,
+                "image": "https://static.wikia.nocookie.net/fallout/images/3/3a/Sneak.png/revision/latest?cb=20111225221224",
+                "description": "The Sneak skill affects your ability to remain undetected, pickpocket items, and perform sneak attacks for bonus damage.",
+                "governing_attribute": "Agility",
+                "notes": ""
+            },
+            {
+                "name": "Speech",
+                "score": 21,
+                "image": "https://static.wikia.nocookie.net/fallout/images/8/8b/Speech.png/revision/latest?cb=20111225221224",
+                "description": "The Speech skill governs how much you can influence others through dialogue and gain access to special speech-related perks and options.",
+                "governing_attribute": "Charisma",
+                "notes": ""
+            },
+            {
+                "name": "Unarmed",
+                "score": 16,
+                "image": "https://static.wikia.nocookie.net/fallout/images/2/24/Unarmed.png/revision/latest?cb=20111225221224",
+                "description": "The Unarmed skill determines your effectiveness in hand-to-hand combat, whether with fists or weapons like brass knuckles or the power fist.",
+                "governing_attribute": "Endurance",
+                "notes": ""
+            }
+        ]
+    ],
+    "perks": [
+        {
+            "name": "Black Widow",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Black_Widow.png",
+            "description": "In combat, you do +10% damage against male opponents. Outside of combat, you'll sometimes have access to unique dialogue options when dealing with the opposite sex.",
+            "requirements": "Level 2, Female",
+            "ranks": 1,
+            "notes": "Male characters can choose Lady Killer instead."
+        },
+        {
+            "name": "Swift Learner",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Swift_Learner.png",
+            "description": "With each rank of the Swift Learner perk, you gain an additional 10% to total experience points whenever experience points are earned.",
+            "requirements": "Level 2",
+            "ranks": 3,
+            "notes": "Useful for faster leveling."
+        },
+        {
+            "name": "Bloody Mess",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Bloody_Mess.png",
+            "description": "With the Bloody Mess perk, characters and creatures you kill will often explode into a red, gut-ridden, torso-deprived mess. And you deal 5% extra damage with all weapons.",
+            "requirements": "None",
+            "ranks": 1,
+            "notes": "Known for its humorous and gory effects."
+        },
+        {
+            "name": "Mysterious Stranger",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Mysterious_Stranger.png",
+            "description": "With this perk, you have a mysterious friend who will occasionally appear in V.A.T.S. mode to help you finish off an enemy.",
+            "requirements": "Level 10",
+            "ranks": 1,
+            "notes": "The Mysterious Stranger has a chance to appear when using V.A.T.S."
+        },
+        {
+            "name": "Cannibal",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Cannibal.png",
+            "description": "With the Cannibal perk, when you're in Sneak mode, you gain the option to eat a corpse to regain health. But every time you feed, you lose Karma, and if the act is witnessed, it is considered a crime against nature.",
+            "requirements": "Level 12",
+            "ranks": 1,
+            "notes": "Useful in survival situations but has negative consequences if witnessed."
+        }
+    ],
+    "weapons": [
+        {
+            "name": "10mm Pistol",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/10mm_Pistol.png",
+            "stats": [
+                {
+                    "damage": 9
+                },
+                {
+                    "damage_per_second": 54
+                },
+                {
+                    "fire_rate": 6
+                },
+                {
+                    "range": 120
+                },
+                {
+                    "accuracy": 70
+                },
+                {
+                    "ap": 17
+                },
+                {
+                    "damage_per_action_point": 0.53
+                },
+                {
+                    "ammo_weight": 0.1
+                },
+                {
+                    "value": 225
+                },
+                {
+                    "value_to_weight_ratio": 75
+                },
+                {
+                    "id": "0000434F"
+                }
+            ]
+        },
+        {
+            "name": "Laser Rifle",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Laser_Rifle.png",
+            "stats": [
+                {
+                    "damage": 23
+                },
+                {
+                    "damage_per_second": 47
+                },
+                {
+                    "fire_rate": 2
+                },
+                {
+                    "range": 180
+                },
+                {
+                    "accuracy": 85
+                },
+                {
+                    "ap": 18
+                },
+                {
+                    "damage_per_action_point": 1.28
+                },
+                {
+                    "ammo_weight": 0
+                },
+                {
+                    "value": 400
+                },
+                {
+                    "value_to_weight_ratio": 50
+                },
+                {
+                    "id": "00004336"
+                }
+            ]
+        },
+        {
+            "name": "Super Sledge",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Super_Sledge.png",
+            "stats": [
+                {
+                    "damage": 32
+                },
+                {
+                    "damage_per_second": 32
+                },
+                {
+                    "fire_rate": "N/A"
+                },
+                {
+                    "range": "N/A"
+                },
+                {
+                    "accuracy": "N/A"
+                },
+                {
+                    "ap": 38
+                },
+                {
+                    "damage_per_action_point": 0.84
+                },
+                {
+                    "ammo_weight": "N/A"
+                },
+                {
+                    "value": 180
+                },
+                {
+                    "value_to_weight_ratio": 9
+                },
+                {
+                    "id": "00004352"
+                }
+            ]
+        },
+        {
+            "name": "Chinese Assault Rifle",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Chinese_Assault_Rifle.png",
+            "stats": [
+                {
+                    "damage": 11
+                },
+                {
+                    "damage_per_second": 82.5
+                },
+                {
+                    "fire_rate": 7.5
+                },
+                {
+                    "range": 120
+                },
+                {
+                    "accuracy": 60
+                },
+                {
+                    "ap": 23
+                },
+                {
+                    "damage_per_action_point": 0.48
+                },
+                {
+                    "ammo_weight": 0.1
+                },
+                {
+                    "value": 500
+                },
+                {
+                    "value_to_weight_ratio": 71.4
+                },
+                {
+                    "id": "0000080B"
+                }
+            ]
+        },
+        {
+            "name": "Fat Man",
+            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Fat_Man.png",
+            "stats": [
+                {
+                    "damage": 400
+                },
+                {
+                    "damage_per_second": 400
+                },
+                {
+                    "fire_rate": 1
+                },
+                {
+                    "range": 150
+                },
+                {
+                    "accuracy": 50
+                },
+                {
+                    "ap": 65
+                },
+                {
+                    "damage_per_action_point": 6.15
+                },
+                {
+                    "ammo_weight": 15
+                },
+                {
+                    "value": 1000
+                },
+                {
+                    "value_to_weight_ratio": 33.3
+                },
+                {
+                    "id": "0000432C"
+                }
+            ]
+        }
+    ]
+}

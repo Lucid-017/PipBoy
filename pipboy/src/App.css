@@ -4,18 +4,26 @@
   font-family: pipboy;
   src: url('/monofonto.otf');
 }
-html,body{
-  height: 100%;
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
+
+/* --primary-color:#ffd52c */
 body{
-  font-family: pipboy ,sans-serif;
+  font-family:"VT323", pipboy ,sans-serif;
   color: #14fe17;
   background-color: #272b23;
+  animation: crtAnimation 100s linear infinite;
+}
+p{
+  font-size: clamp(18px, 3vw, 30px)
 }
 body::before{
   content: "";
   position: absolute;
-  height: 750px;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
