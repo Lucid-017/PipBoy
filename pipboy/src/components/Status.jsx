@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./css/Status.css";
-import centergif from "../assets/img/homescreen.gif";
+// import centergif from "../assets/img/homescreen.gif";
+// import centergif from "../../public/assets/img/homescreen.lottie";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import pistol from "../assets/img/996px-Pistol_icon.svg.png";
 import crossHairs from "../assets/img/icons8-center-of-gravity-50.png";
 import helmet from "../assets/img/military-helmet-svgrepo-com.svg";
@@ -8,6 +10,16 @@ import lightning from "../assets/img/icons8-lightning-bolt-90.png";
 import danger from "../assets/img/icons8-nuclear-90.png";
 
 const Status = () => {
+const [useLocalFallback, setUseLocalFallback] = useState(false);
+  const homeLottie = "https://lottie.host/6dfa5a6-8e1a-4e04-8438-2d6805feab16/QR1jW7g8vs.lottie";
+  useEffect(()=>{
+    // test if url is accessible
+    fetch(homeLottie,{method:'HEAD'})
+    .then(res=>{if(!res.ok){setUseLocalFallback(false)}})
+      .catch(()=>{
+        setUseLocalFallback(true)
+      })
+  },[])
   return (
     <div>
       <div className="container sm:max-w-5/12 mx-auto">
@@ -15,7 +27,12 @@ const Status = () => {
           {/* main image span col2 to 3, rows 2 and 4 */}
           <div className="col-start-2 col-end-4 row-start-2 row-end-4 sm:row-end-5  place-content-center mx-auto">
             <div class="center-image place-content-center">
-              <img className="w-full h-full" src={centergif} alt="pipboy" />
+                 <DotLottieReact
+                 src={useLocalFallback? '/assets/img/homescreen.lottie' : homeLottie}
+                 autoplay
+                 loop
+                 />
+
             </div>
           </div>
           {/* health bar on head row 1 col2 */}
@@ -95,7 +112,7 @@ const Status = () => {
             <div className="row fullimg image p-1 flex justify-center items-center">
               <img className="max-w-10" src={pistol} alt="pistol image" srcset={pistol} />
             </div>
-            <div className="row flex flex-col items-center space-y-1">
+            <div className="row flex flex-col justify-center items-center space-y-1">
               <div className="img">
                 <img className="max-w-6" src={crossHairs} alt="crosshair image" srcset={crossHairs}/>
               </div>
@@ -106,13 +123,13 @@ const Status = () => {
             <div className="row fullimg image p-1 flex justify-center items-center">
               <img className="max-w-10" src={helmet} alt="helmet image" srcset={helmet} />
             </div>
-            <div className=" row statbox flex flex-col items-center space-y-1">
+            <div className=" row statbox flex flex-col justify-center items-center space-y-1">
               <div className="img">
                 <img className="max-w-6" src={lightning} alt="ligtning icon" srcset={lightning} />
               </div>
               <div className="num">18</div>
             </div>
-            <div className="row statbox flex flex-col items-center space-y-1">
+            <div className="row statbox flex flex-col justify-center items-center space-y-1">
               <div className="img">
               <img className="max-w-6" src={danger} alt="biohazard icon" srcset={danger} />
               </div>

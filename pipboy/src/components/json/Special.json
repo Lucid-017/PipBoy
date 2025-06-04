@@ -186,7 +186,7 @@
         }
     ],
     "skills": [
-        [
+        
             {
                 "name": "Barter",
                 "score": 18,
@@ -291,7 +291,7 @@
                 "governing_attribute": "Endurance",
                 "notes": ""
             }
-        ]
+        
     ],
     "perks": [
         {

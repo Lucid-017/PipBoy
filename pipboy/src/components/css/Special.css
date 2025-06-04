@@ -1,6 +1,4 @@
 .item-list p{
-    font-size: 20px;
-    font-weight: 600;
     padding: 5px 10px;
     /* margin-bottom: 10px; */
 }
@@ -8,4 +6,40 @@
     color: #272b23;
     background-color: #14fe17;
     border-radius: 2px;
+}
+/* general component */
+.pipboy-container{
+    padding: 10px;
+position: relative;
+/* width: 150px      ; */
+/* height: 200px      ; */
+}
+.neutral{
+    /* opacity: 0.8; */
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+    filter: grayscale(1);
+}
+.pipboy-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00aa00;
+    mix-blend-mode: color;
+    pointer-events: none;
+    opacity: .3;
+}
+.pipboy-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.4)1px,transparent 1px,transparent 2px);
+    pointer-events: none;
+    opacity: 0.3;
 }
