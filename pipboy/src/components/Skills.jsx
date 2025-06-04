@@ -26,7 +26,7 @@ const Skills = () => {
                     {/* if image is attribute is hovered on */}
                     {skills && (
                       <div>
-                        {/* <img src={skills.image} alt={skills.name} className="w-[300px] h-[300px] mx-auto " /> */}
+                        <img src={skills.image} alt={skills.name} className="w-[300px] h-[300px] mx-auto " />
                         <div className="desc">
                           <p>{skills.description}</p>
                         </div>

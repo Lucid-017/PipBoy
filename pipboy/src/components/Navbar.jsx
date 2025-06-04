@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="w-full px-4 pt-2 relative">
       <div id="MyNav" className="hidden sm:block border-b-2">
-        <ul class="flex flex-wrap text-center md:text-start justify-center space-x-4">
+        <ul className="flex flex-wrap text-center md:text-start justify-center space-x-4">
           {navItems.map((item) => (
             <li key={item.name} className="nav-item">
               <NavLink
@@ -51,8 +51,7 @@ const Navbar = () => {
           <img
             src="../../public/assets/favicon/icons8-fallout-shelter-50.svg"
             alt="fallout Logo"
-            srcset=""
-          />
+                      />
         </div>
       </div>
       {mobile && (

@@ -1,7 +1,5 @@
 import React, { useState,useEffect } from "react";
 import "./css/Status.css";
-// import centergif from "../assets/img/homescreen.gif";
-// import centergif from "../../public/assets/img/homescreen.lottie";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import pistol from "../assets/img/996px-Pistol_icon.svg.png";
 import crossHairs from "../assets/img/icons8-center-of-gravity-50.png";
@@ -11,7 +9,7 @@ import danger from "../assets/img/icons8-nuclear-90.png";
 
 const Status = () => {
 const [useLocalFallback, setUseLocalFallback] = useState(false);
-  const homeLottie = "https://lottie.host/6dfa5a6-8e1a-4e04-8438-2d6805feab16/QR1jW7g8vs.lottie";
+  const homeLottie = "https://lottie.host/f6dfa5a6-8e1a-4e04-8438-2d6805feab16/QR1jW7g8vs.lottie";
   useEffect(()=>{
     // test if url is accessible
     fetch(homeLottie,{method:'HEAD'})
@@ -26,9 +24,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
         <div className="grid grid-cols-4 grid-rows-4 sm:grid-rows-5 gap-2 w-full h-120 ">
           {/* main image span col2 to 3, rows 2 and 4 */}
           <div className="col-start-2 col-end-4 row-start-2 row-end-4 sm:row-end-5  place-content-center mx-auto">
-            <div class="center-image place-content-center">
+            <div className="center-image place-content-center">
                  <DotLottieReact
-                 src={useLocalFallback? '/assets/img/homescreen.lottie' : homeLottie}
+                 src={useLocalFallback? '/assets/img/Lottie/homescreen.lottie' : homeLottie}
                  autoplay
                  loop
                  />
@@ -40,9 +38,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
             <div className="text-center">
               <small className="mx-auto font-semibold">Head</small>
             </div>
-            <div class="stat-bar w-[60px] h-[20px] md:w-[40px] md:h-[15px]">
-              <div class="level-progress">
-                <div class="level-percent l70"></div>
+            <div className="stat-bar w-[60px] h-[20px] md:w-[40px] md:h-[15px]">
+              <div className="level-progress">
+                <div className="level-percent l70"></div>
               </div>
             </div>
           </div>
@@ -50,9 +48,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
           <div className="col-start-1 row-start-2  place-content-end justify-self-end sm:justify-self-center">
             <div>
               <small className="text-center font-semibold">Left hand</small>
-              <div class="stat-bar">
-                <div class="level-progress">
-                  <div class="level-percent l10"></div>
+              <div className="stat-bar">
+                <div className="level-progress">
+                  <div className="level-percent l10"></div>
                 </div>
               </div>
             </div>
@@ -61,9 +59,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
           <div className="col-start-4 row-start-2  place-content-end justify-self-start sm:justify-self-center">
             <div>
             <small className="text-center font-semibold">Right hand</small>
-            <div class="stat-bar">
-              <div class="level-progress">
-                <div class="level-percent l50"></div>
+            <div className="stat-bar">
+              <div className="level-progress">
+                <div className="level-percent l50"></div>
               </div>
             </div>
             </div>
@@ -73,9 +71,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
           <div className="col-start-1 row-start-3 sm:col-start-1 sm:row-start-4 place-content-center justify-self-end sm:justify-self-center">
           <div>
             <small className="text-center font-semibold">Left Leg</small>
-            <div class="stat-bar">
-              <div class="level-progress">
-                <div class="level-percent l50"></div>
+            <div className="stat-bar">
+              <div className="level-progress">
+                <div className="level-percent l50"></div>
               </div>
             </div>
             </div>
@@ -84,9 +82,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
           <div className="col-start-4 row-start-3 sm:col-start-4 sm:row-start-4 place-content-center justify-self-start sm:justify-self-center">
           <div>
             <small className="text-center font-semibold">Right Leg</small>
-            <div class="stat-bar">
-              <div class="level-progress">
-                <div class="level-percent l50"></div>
+            <div className="stat-bar">
+              <div className="level-progress">
+                <div className="level-percent l50"></div>
               </div>
             </div>
             </div>
@@ -96,9 +94,9 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
             <div className="text-center">
               <small className="mx-auto font-semibold">Health</small>
             </div>
-            <div class="stat-bar">
-              <div class="level-progress">
-                <div class="level-percent l50"></div>
+            <div className="stat-bar">
+              <div className="level-progress">
+                <div className="level-percent l50"></div>
               </div>
             </div>
           </div>

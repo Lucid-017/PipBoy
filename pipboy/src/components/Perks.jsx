@@ -25,7 +25,7 @@ const Perks = () => {
                     {/* if image is attribute is hovered on */}
                     {perk && (
                       <div>
-                        {/* <img src={perk.image} alt={perk.name} className="w-[300px] h-[300px] mx-auto " /> */}
+                        <img src={perk.image} alt={perk.name} className="w-[300px] h-[250px] mx-auto " />
                         <div className="desc">
                           <p>{perk.description}</p>
                         </div>

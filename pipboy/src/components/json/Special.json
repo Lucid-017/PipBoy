@@ -144,42 +144,56 @@
     "attributes": [
         {
             "name": "Strength",
+             "lottieUrl":"https://lottie.host/a4fc36a9-f8d3-4f9d-968e-c06dc9d738ab/sDENzKQgUQ.lottie",
+            "lottieFallback":"/assets/img/Lottie/strength unscreen.lottie",
             "image": "/assets/img/strength-unscreen.gif",
             "score": 7,
             "description": "Strength is a measure of your raw physical power. It affects how much you can carry, and determines the effectiveness of all melee attacks."
         },
         {
             "name": "Perception",
+            "lottieUrl":"https://lottie.host/64484ca4-4840-4fed-8a8e-6f3082694281/Ol2na1hDXa.lottie",
+            "lottieFallback":"/assets/img/Lottie/perception unscreen.lottie",
             "image": "/assets/img/perception-unscreen.gif",
             "score": 5,
             "description": "A high Perception grants a bonus to the Explosives, Lockpick and Energy Weapons skills, and determines when red compass markings appear (which indicate threats)."
         },
         {
             "name": "Endurance",
+            "lottieUrl":"https://lottie.host/5b92f5c0-d854-456c-ac39-f24f18e741cc/IBrAnOzmBh.lottie",
+            "lottieFallback":"/assets/img/Lottie/endurance.lottie",
             "image": "/assets/img/endurance.gif",
             "score": 8,
             "description": "Endurance is a measure of your overall physical fitness. It affects your total health, and your resistance to environmental hazards like radiation."
         },
         {
             "name": "Charisma",
+            "lottieUrl":"https://lottie.host/83a8ebd7-7119-40a9-958a-97739fbb7381/oUeB0a9ovI.lottie",
+            "lottieFallback":"/assets/img/Lottie/charisma unscreen.lottie",
             "image": "/assets/img/charisma-unscreen.gif",
             "score": 3,
             "description": "Charisma is your ability to charm and persuade others. It affects your success in dialogue and the number of companions you can recruit."
         },
         {
             "name": "Intelligence",
+            "lottieUrl":"https://lottie.host/2c97a639-e404-467e-9f62-9db491b3c449/ldJuGSvLXt.lottie",
+            "lottieFallback":"/assets/img/Lottie/intelligence.lottie",
             "image": "/assets/img/intelligence.gif",
             "score": 9,
             "description": "Intelligence affects the number of new skill points earned per level and your aptitude in technical and scientific areas. It’s crucial for dialogue options requiring wit."
         },
         {
             "name": "Agility",
+            "lottieUrl":"https://lottie.host/5cbfcc14-375f-4f26-b204-7f0d1713420e/WWHHRFqY45.lottie",
+            "lottieFallback":"/assets/img/Lottie/ability unscreen.lottie",
             "image": "/assets/img/ability-unscreen.gif",
             "score": 6,
             "description": "Agility is a measure of your speed and dexterity. It affects the number of Action Points in V.A.T.S. and your ability to sneak."
         },
         {
             "name": "Luck",
+             "lottieUrl":"https://lottie.host/3799fdc1-3d03-49f5-b9ac-62ec02bcbe2d/jN51mgPG9Q.lottie",
+            "lottieFallback":"/assets/img/Lottie/luck.lottie",
             "image": "/assets/img/luck.gif",
             "score": 4,
             "description": "Luck influences the chance of critical hits and affects every skill subtly. It also impacts the quality of loot you find in the wasteland."
@@ -190,7 +204,7 @@
             {
                 "name": "Barter",
                 "score": 18,
-                "image": "https://static.wikia.nocookie.net/fallout/images/5/5f/Barter.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Barter.webp",
                 "description": "The Barter skill affects the prices you get for buying and selling items. In general, the higher your Barter skill, the lower your prices on purchased items.",
                 "governing_attribute": "Charisma",
                 "notes": ""
@@ -198,7 +212,7 @@
             {
                 "name": "Big Guns",
                 "score": 25,
-                "image": "https://static.wikia.nocookie.net/fallout/images/6/6a/Big_Guns.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Big_Guns_icon.webp",
                 "description": "The Big Guns skill determines your combat effectiveness with all oversized weapons such as the Fat Man, missile launcher, minigun, Gatling laser, and flamer.",
                 "governing_attribute": "Endurance",
                 "notes": "Replaced by Energy Weapons in later games like Fallout: New Vegas."
@@ -206,7 +220,7 @@
             {
                 "name": "Energy Weapons",
                 "score": 32,
-                "image": "https://static.wikia.nocookie.net/fallout/images/0/0a/Energy_Weapons.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/EnergyWeapons.webp",
                 "description": "The Energy Weapons skill determines your effectiveness with unconventional weapons such as the alien blaster, laser pistol, plasma rifle, etc.",
                 "governing_attribute": "Perception",
                 "notes": ""
@@ -214,7 +228,7 @@
             {
                 "name": "Explosives",
                 "score": 17,
-                "image": "https://static.wikia.nocookie.net/fallout/images/3/3b/Explosives.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Explosives.webp",
                 "description": "The Explosives skill determines your ability to use explosive weapons such as grenades, mines, and the Fat Man, as well as your ability to disarm traps.",
                 "governing_attribute": "Perception",
                 "notes": ""
@@ -222,7 +236,7 @@
             {
                 "name": "Lockpick",
                 "score": 24,
-                "image": "https://static.wikia.nocookie.net/fallout/images/8/8a/Lockpick.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Lockpick.webp",
                 "description": "The Lockpick skill is used to open locked doors and containers. Higher skill levels allow you to pick more difficult locks.",
                 "governing_attribute": "Perception",
                 "notes": ""
@@ -230,7 +244,7 @@
             {
                 "name": "Medicine",
                 "score": 20,
-                "image": "https://static.wikia.nocookie.net/fallout/images/9/9c/Medicine.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Medicine.webp",
                 "description": "The Medicine skill determines the effectiveness of stimpaks, RadAway, and other medical items, as well as your ability to heal through dialogue options.",
                 "governing_attribute": "Intelligence",
                 "notes": ""
@@ -238,7 +252,7 @@
             {
                 "name": "Melee Weapons",
                 "score": 25,
-                "image": "https://static.wikia.nocookie.net/fallout/images/5/5d/Melee_Weapons.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/MeleeWeapons.webp",
                 "description": "The Melee Weapons skill determines your effectiveness with melee weapons such as knives, baseball bats, and the super sledge.",
                 "governing_attribute": "Strength",
                 "notes": ""
@@ -246,7 +260,7 @@
             {
                 "name": "Repair",
                 "score": 34,
-                "image": "https://static.wikia.nocookie.net/fallout/images/7/7f/Repair.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Repair_icon.webp",
                 "description": "The Repair skill allows you to maintain weapons and apparel, craft items at a workbench, and repair objects like turrets or generators.",
                 "governing_attribute": "Intelligence",
                 "notes": ""
@@ -254,7 +268,7 @@
             {
                 "name": "Science",
                 "score": 34,
-                "image": "https://static.wikia.nocookie.net/fallout/images/4/4f/Science.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Science_icon.webp",
                 "description": "The Science skill represents your knowledge of technology and is used to hack computers, recycle energy ammo, and access science-related dialogue options.",
                 "governing_attribute": "Intelligence",
                 "notes": ""
@@ -262,7 +276,7 @@
             {
                 "name": "Small Guns",
                 "score": 20,
-                "image": "https://static.wikia.nocookie.net/fallout/images/1/1a/Small_Guns.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Small_Guns_skill_icon.webp",
                 "description": "The Small Guns skill determines your effectiveness with conventional firearms such as the 10mm pistol, hunting rifle, assault rifle, etc.",
                 "governing_attribute": "Agility",
                 "notes": "Renamed 'Guns' in Fallout: New Vegas."
@@ -270,7 +284,7 @@
             {
                 "name": "Sneak",
                 "score": 15,
-                "image": "https://static.wikia.nocookie.net/fallout/images/3/3a/Sneak.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Icon_Fo3_Sneak_skill.webp",
                 "description": "The Sneak skill affects your ability to remain undetected, pickpocket items, and perform sneak attacks for bonus damage.",
                 "governing_attribute": "Agility",
                 "notes": ""
@@ -278,7 +292,7 @@
             {
                 "name": "Speech",
                 "score": 21,
-                "image": "https://static.wikia.nocookie.net/fallout/images/8/8b/Speech.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Speech.webp",
                 "description": "The Speech skill governs how much you can influence others through dialogue and gain access to special speech-related perks and options.",
                 "governing_attribute": "Charisma",
                 "notes": ""
@@ -286,7 +300,7 @@
             {
                 "name": "Unarmed",
                 "score": 16,
-                "image": "https://static.wikia.nocookie.net/fallout/images/2/24/Unarmed.png/revision/latest?cb=20111225221224",
+                "image": "/assets/img/Unarmed.webp",
                 "description": "The Unarmed skill determines your effectiveness in hand-to-hand combat, whether with fists or weapons like brass knuckles or the power fist.",
                 "governing_attribute": "Endurance",
                 "notes": ""
@@ -296,7 +310,7 @@
     "perks": [
         {
             "name": "Black Widow",
-            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Black_Widow.png",
+            "image": "/assets/img/Black_Widow.webp",
             "description": "In combat, you do +10% damage against male opponents. Outside of combat, you'll sometimes have access to unique dialogue options when dealing with the opposite sex.",
             "requirements": "Level 2, Female",
             "ranks": 1,
@@ -304,7 +318,7 @@
         },
         {
             "name": "Swift Learner",
-            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Swift_Learner.png",
+            "image": "/assets/img/SwiftLearner.webp",
             "description": "With each rank of the Swift Learner perk, you gain an additional 10% to total experience points whenever experience points are earned.",
             "requirements": "Level 2",
             "ranks": 3,
@@ -312,7 +326,7 @@
         },
         {
             "name": "Bloody Mess",
-            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Bloody_Mess.png",
+            "image": "/assets/img/Bloody_Mess_FO3.webp",
             "description": "With the Bloody Mess perk, characters and creatures you kill will often explode into a red, gut-ridden, torso-deprived mess. And you deal 5% extra damage with all weapons.",
             "requirements": "None",
             "ranks": 1,
@@ -320,7 +334,7 @@
         },
         {
             "name": "Mysterious Stranger",
-            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Mysterious_Stranger.png",
+            "image": "/assets/img/Mysterious_Stranger.webp",
             "description": "With this perk, you have a mysterious friend who will occasionally appear in V.A.T.S. mode to help you finish off an enemy.",
             "requirements": "Level 10",
             "ranks": 1,
@@ -328,7 +342,7 @@
         },
         {
             "name": "Cannibal",
-            "image": "https://static.wikia.nocookie.net/fallout/images/placeholder/Icon_Cannibal.png",
+            "image": "/assets/img/Cannibal.webp",
             "description": "With the Cannibal perk, when you're in Sneak mode, you gain the option to eat a corpse to regain health. But every time you feed, you lose Karma, and if the act is witnessed, it is considered a crime against nature.",
             "requirements": "Level 12",
             "ranks": 1,
