@@ -1,8 +1,6 @@
 import { useState } from "react";
-import "./css/Special.css";
-import Data from "./json/Special.json";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import { data } from "react-router-dom";
+import "../css/Special.css";
+import Data from "../json/Special.json";
 
 const General = () => {
   return (

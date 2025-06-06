@@ -1,19 +1,21 @@
 import React, { useState } from 'react'
 import './css/Home.css'
 import { Link } from 'react-router-dom';
-import Status from '../components/Status';
-import Special from '../components/Special';
-import Perks from '../components/Perks';
-import Skills from '../components/Skills';
-import General from '../components/General';
+import Status from '../components/stat components/Status';
+import Special from '../components/stat components/Special';
+import Perks from '../components/stat components/Perks';
+import Skills from '../components/stat components/Skills';
+import General from '../components/stat components/General';
+import { AnimatePresence, motion } from "framer-motion";
+
 const Home = () => {
     const [isActive,setIsActive] = useState('STATUS')
     const tabs = [
-        { name: "STATUS", path: "/status" },
-        { name: "S.P.E.C.I.A.L", path: "/inventory" },
-        { name: "SKILLS", path: "/skills" },
-        { name: "PERKS", path: "/perk" },
-        { name: "GENERAL", path: "/data" },
+        { name: "STATUS"},
+        { name: "S.P.E.C.I.A.L"},
+        { name: "SKILLS"},
+        { name: "PERKS"},
+        { name: "GENERAL"}
       ];
   return (
     <section className='px-5 md:px-10'>
@@ -26,8 +28,18 @@ const Home = () => {
             </li>
         ))}
         </ul>
-
-        {isActive === 'STATUS' ? <Status/> : isActive=== 'S.P.E.C.I.A.L' ? <Special/> :isActive==='PERKS' ?<Perks/>: isActive==='SKILLS' ?<Skills/>:<General/>}
+        {/* body of content */}
+        <AnimatePresence mode="wait">
+            <motion.div
+            key={isActive}
+            initial={{opacity:0,y:10}}
+            animate={{opacity:1,y:0}}
+            exit={{opacity:0,y:-10}}
+            transition={{duration:0.2}}
+            >
+                {isActive === 'STATUS' ? <Status/> : isActive=== 'S.P.E.C.I.A.L' ? <Special/> :isActive==='PERKS' ?<Perks/>: isActive==='SKILLS' ?<Skills/>:<General/>}
+            </motion.div>
+        </AnimatePresence>
                     
     </section>
   )

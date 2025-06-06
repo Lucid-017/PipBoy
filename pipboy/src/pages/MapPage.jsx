@@ -1,19 +1,11 @@
 import {useState} from 'react'
 import {AnimatePresence,motion} from 'framer-motion'
-import Weapons from '../components/Inventory component/Weapons';
-import Apparel from '../components/Inventory component/Apparel';
-import Misc from '../components/Inventory component/Misc';
-import Ammo from '../components/Inventory component/Ammo';
-import Aid from '../components/Inventory component/Aid';
 
-const Inventory = () => {
-   const [isActive,setIsActive] = useState('WEAPONS')
+const MapPage = () => {
+     const [isActive,setIsActive] = useState('WORLD MAP')
       const tabs = [
-          { name: "WEAPONS"},
-          { name: "APPAREL"},
-          { name: "AID"},
-          { name: "MISC"},
-          { name: "AMMO"}
+          { name: "WORLD MAP"},
+          { name: "LOCAL MAP"}
         ];
     return (
       <section className='px-5 md:px-10'>
@@ -35,7 +27,7 @@ const Inventory = () => {
               exit={{opacity:0,y:-10}}
               transition={{duration:0.2}}
               >
-                  {isActive === 'WEAPONS' ? <Weapons/> : isActive=== 'APPAREL' ? <Apparel/> :isActive==='AID' ?<Aid/>: isActive==='MISC' ?<Misc/>:<Ammo/>}
+                  {isActive==='WORLD MAP' ?'<Aid/>':'<Ammo/>'}
               </motion.div>
           </AnimatePresence>
                       
@@ -43,4 +35,4 @@ const Inventory = () => {
     )
 }
 
-export default Inventory
+export default MapPage

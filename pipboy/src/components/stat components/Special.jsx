@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
-import "./css/Special.css";
-import Data from "./json/Special.json";
-import LoittieWithFallBack from "./LoittieWithFallBack";
+import "../css/Special.css";
+import Data from "../json/Special.json";
+import LoittieWithFallBack from "../LoittieWithFallBack";
 
 
 const Special = () => {

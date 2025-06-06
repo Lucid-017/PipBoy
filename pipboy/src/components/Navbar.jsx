@@ -6,7 +6,7 @@ const Navbar = () => {
   const [mobile, isMobile] = useState(false);
   const navItems = [
     { name: "STAT", path: "/" },
-    { name: "INV", path: "/inventory" },
+    { name: "ITEMS", path: "/inventory" },
     { name: "DATA", path: "/data" },
     { name: "MAP", path: "/map" },
     { name: "RADIO", path: "/radio" },
@@ -16,10 +16,9 @@ const Navbar = () => {
     isMobile(!mobile);
   };
   
-  const handleClick = (e) => {
+  const handleClick = () => {
     // on each click close the window
-    console.log(e)
-    isMobile(false);
+        isMobile(false);
   };
 
 
@@ -31,9 +30,10 @@ const Navbar = () => {
             <li key={item.name} className="nav-item">
               <NavLink
                 to={item.path}
-                end
-                className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                className={({ isActive }) =>{
+                  console.log(isActive,item.name)
+                  return `nav-link  ${isActive ? "active " : ""}`
+                }
                 }
               >
                 {item.name}
@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="mobile block sm:hidden">
           <ul>
             {navItems.map((nav) => (
-              <li on onClick={handleClick} key={nav.name} className="px-5 mobile-item text-center">
+              <li onClick={handleClick} key={nav.name} className="px-5 mobile-item text-center">
                 <NavLink to={nav.path}>{nav.name}</NavLink>
               </li>
             ))}

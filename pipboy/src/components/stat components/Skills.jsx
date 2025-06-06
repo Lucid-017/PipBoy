@@ -1,4 +1,4 @@
-import Data from "./json/Special.json";
+import Data from "../json/Special.json";
 import { useState } from "react";
 
 const Skills = () => {

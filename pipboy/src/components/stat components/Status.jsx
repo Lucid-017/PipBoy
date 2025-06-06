@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from "react";
-import "./css/Status.css";
+import "../css/Status.css";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import pistol from "../assets/img/996px-Pistol_icon.svg.png";
-import crossHairs from "../assets/img/icons8-center-of-gravity-50.png";
-import helmet from "../assets/img/military-helmet-svgrepo-com.svg";
-import lightning from "../assets/img/icons8-lightning-bolt-90.png";
-import danger from "../assets/img/icons8-nuclear-90.png";
+import pistol from "../../assets/img/996px-Pistol_icon.svg.png";
+import crossHairs from "../../assets/img/icons8-center-of-gravity-50.png";
+import helmet from "../../assets/img/military-helmet-svgrepo-com.svg";
+import lightning from "../../assets/img/icons8-lightning-bolt-90.png";
+import danger from "../../assets/img/icons8-nuclear-90.png";
 
 const Status = () => {
 const [useLocalFallback, setUseLocalFallback] = useState(false);
@@ -24,11 +24,12 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
         <div className="grid grid-cols-4 grid-rows-4 sm:grid-rows-5 gap-2 w-full h-120 ">
           {/* main image span col2 to 3, rows 2 and 4 */}
           <div className="col-start-2 col-end-4 row-start-2 row-end-4 sm:row-end-5  place-content-center mx-auto">
-            <div className="center-image place-content-center">
+            <div className="center-image place-content-center" >
                  <DotLottieReact
                  src={useLocalFallback? '/assets/img/Lottie/homescreen.lottie' : homeLottie}
                  autoplay
                  loop
+                 aria-description="Animated PIP-Boy"
                  />
 
             </div>
@@ -136,6 +137,7 @@ const [useLocalFallback, setUseLocalFallback] = useState(false);
           </div>
         </div>
       </div>
+      <p className="text-center hidden sm:block">Lucid-017</p>
     </div>
   );
 };
